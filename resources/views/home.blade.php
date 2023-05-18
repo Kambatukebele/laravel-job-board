@@ -67,57 +67,57 @@
         {{-- end Navigation --}}
 
         {{-- TEXT AND IMAGE BLOCK --}}
-        <div class="flex justify-between items-center content-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="w-4/6 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {{-- TEXT BLOCK --}}
-          <div>
-            <h1>GOT TALENT <br>MEET OPPORTUNITY</h1>
-            <h4>Over<span>1800+</span>jobs are waiting for you</h4>
-            <form action="">
-              <div class="">
-                <label for="WHAT">WHAT</label>
-                <select name="job_title" id="job_title">
-                  <option value="Web_developer">Web developer</option>
-                  <option value="Web_designer">Web designer</option>
-                  <option value="fullstack">Fullstack</option>
-                  <option value="front_end">Front end</option>
-                  <option value="back_end">Back end</option>
-                </select>
-              </div>
-               <div class="">
-                <label for="TYPE">TYPE</label>
-                <select name="job_type" id="job_title">
-                  <option value="Web_developer">Web developer</option>
-                  <option value="Web_designer">Web designer</option>
-                  <option value="fullstack">Fullstack</option>
-                  <option value="front_end">Front end</option>
-                  <option value="back_end">Back end</option>
-                </select>
-              </div>
-               <div class="">
-                <label for="LOCATION">LOCATION</label>
-                <select name="job_location" id="job_title">
-                  <option value="Web_developer">Web developer</option>
-                  <option value="Web_designer">Web designer</option>
-                  <option value="fullstack">Fullstack</option>
-                  <option value="front_end">Front end</option>
-                  <option value="back_end">Back end</option>
-                </select>
-              </div>
-              <div>
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div>
-                <button type="button">Find Job</button>
-              </div>
-            </form>
-          </div>
-          {{-- END TEXT BLOCK --}}
+          <div class="flex justify-between items-center relative">
+            <div class="">
+              <h1 class="text-6xl text-black font-medium leading-tight mb-2.5">GOT TALENT <br>MEET OPPORTUNITY</h1>
+              <h4 class="text-4xl text-blue-500 font-thin leading-tight mb-10">Over <span
+                  class="text-purple-400 font-medium"> 1800+ </span>jobs are waiting for you</h4>
+              <form action="" method="POST" class="flex justify-between items-center border rounded-lg h-16 w-full px-1.5 py-1.5 bg-white">
+                <div class="w-40 h-15">
+                  <label class="pl-1 text-gray-400 text-sm font-normal" for="WHAT">WHAT</label>
+                  <select name="job_title" id="job_title" class="text-sm bg-transparent font-medium">
+                    <option value="Web_developer">Web developer</option>
+                    <option value="Web_designer">Web designer</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="front_end">Front end</option>
+                    <option value="back_end">Back end</option>
+                  </select>
+                </div>
+                <div class="w-40 h-15">
+                  <label class="pl-1 text-gray-400 text-sm font-normal" for="TYPE">TYPE</label>
+                  <select name="job_type" id="job_title" class="text-sm bg-transparent font-medium">
+                    <option value="Web_developer">Web developer</option>
+                    <option value="Web_designer">Web designer</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="front_end">Front end</option>
+                    <option value="back_end">Back end</option>
+                  </select>
+                </div>
+                <div class="w-40 h-15">
+                  <label class="pl-1 text-gray-400 text-sm font-normal" for="LOCATION">LOCATION</label>
+                  <select name="job_location" id="job_title" class="text-sm bg-transparent font-medium">
+                    <option value="Web_developer">Web developer</option>
+                    <option value="Web_designer">Web designer</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="front_end">Front end</option>
+                    <option value="back_end">Back end</option>
+                  </select>
+                </div>
+                <div class="w-36 h-14 flex justify-center items-center bg-blue-700 text-white rounded-lg ml-2">
+                  <button class="text-base font-semibold" type="button">Find Job</button>
+                </div>
+              </form>
+            </div>
+            {{-- END TEXT BLOCK --}}
 
-          {{-- IMAGE BLOCK --}}
-          <div>
-            <img src="{{ asset('/images/bnr-right-pic.png') }}" alt="image-hero">
+            {{-- IMAGE BLOCK --}}
+            <div class="w-1/2 absolute left-2/3">
+              <img class="" src="{{ asset('/images/bnr-right-pic.png') }}" alt="image-hero">
+            </div>
+            {{-- END IMAGE BLOCK --}}
           </div>
-          {{-- END IMAGE BLOCK --}}
         </div>
       </div>
     </header>
